@@ -47,6 +47,7 @@ nav{
   font-size: 16px;
   cursor: pointer;
   border-radius: 4px;
+  text-decoration: none;
 }
 button{
     background-color: black;
@@ -57,7 +58,15 @@ button{
     cursor: pointer;
     border-radius: 4px;
     transition-duration: ease;
+
+  animation-name: pulseAnimation;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: both;
 }
+
 button:hover{
     background-color: goldenrod;
     color: black;
@@ -238,5 +247,182 @@ margin-left: 50px;
 .contact-heading{
     text-align: center;
     font-size: 2rem;
-    margin-bottom: 20px;
+    margin-bottom: 20px;  
+    display: flex;
+    justify-content: center; 
+}
+.contact-info{
+    display: flex;
+    justify-content:center;
+    margin-top: 20px;
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+    width: 50%;
+    margin-left: 25%;
+    border-radius: 10px;
+}
+.loc{
+    gap: 20px;
+    m
+}
+.send-button{
+  background-color: black;
+    color: goldenrod;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition-duration: ease;
+    height: 10vh;
+}
+
+@keyframes pulseAnimation {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.15); }
+}
+
+.element {
+  animation-name: pulseAnimation;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: both;
+}
+.footer{
+    background-color: black;
+    color: goldenrod;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}/* ============================
+   RESPONSIVE / MEDIA QUERIES
+   ============================ */
+
+/* ----- Tablets (≤1024px) ----- */
+@media (max-width: 1024px) {
+  .products {
+    padding: 20px 25px 60px;
+  }
+
+  .first-wrapper {
+    gap: 20px;
+  }
+
+  .about-content-wrapper {
+    gap: 30px;
+  }
+
+  .hero-title {
+    font-size: 2.6rem;
+  }
+}
+
+/* ----- Small tablets / large phones (≤768px) ----- */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px 20px;
+  }
+
+  nav ul {
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero {
+    padding: 70px 20px;
+  }
+
+  .hero-title {
+    font-size: 2.2rem;
+    letter-spacing: 3px;
+  }
+
+  .hero-subtitle {
+    font-size: 0.95rem;
+    padding: 0 10px;
+  }
+
+  .collect {
+    font-size: 1.6rem;
+  }
+
+  .first-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sateur-paris,
+  .product-card,
+  .first-wrapper > div {
+    width: 90%;
+    max-width: 320px;
+  }
+
+  /* Stack image + text sections */
+  .about-content-wrapper,
+  .about-content-wrapper.reverse {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image {
+    height: 260px;
+  }
+
+  .contact-form {
+    width: 100%;
+    padding: 0 10px;
+  }
+}
+
+/* ----- Mobile phones (≤480px) ----- */
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+  }
+
+  .hero-subtitle {
+    font-size: 0.85rem;
+  }
+
+  .shop-btn button,
+  .cta-button {
+    padding: 10px 24px;
+    font-size: 0.75rem;
+  }
+
+  nav ul {
+    gap: 15px;
+  }
+
+  .nav-link {
+    font-size: 0.75rem;
+  }
+
+  .navbar-brand {
+    width: 100px;
+    height: auto;
+  }
+
+  .about-us h3,
+  .contact-heading {
+    font-size: 1.5rem;
+  }
+
+  .cart-btn {
+    padding: 6px 14px;
+    font-size: 0.7rem;
+  }
 }

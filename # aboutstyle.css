@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+     font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+nav{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 10px 60px;
+    justify-content: space-between;
+    background-color:black;
+    color: goldenrod;
+}
+.navbar-brand{
+  width: 150px;
+  height: 100px;
+
+}
+#nav-blissis{
+  list-style-type: none;
+}
+.nav-link{
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+.nav-link:hover{
+  color: goldenrod;
+}
+
+.cart-btn{
+  background-color:goldenrod;
+  color: rgb(12, 9, 1);
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+button{
+    background-color: black;
+    color: goldenrod;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition-duration: ease;
+}
+button:hover{
+    background-color: goldenrod;
+    color: black;.about-content-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+/* ===== About Us Section ===== */
+.about-us {
+  padding: 80px 40px;
+  border-top: 1px solid #222;
+  background-color: #0d0d0d;
+}
+
+.about-us h3 {
+  text-align: center;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+  color: #caa646;
+}
+
+.us-class {
+  color: #f2f2f2;
+}
+
+.about-content-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.about-content-wrapper.reverse {
+  flex-direction: row-reverse;
+}
+
+.left-about-us,
+.right-about-us {
+  flex: 1;
+}
+
+.about-image {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid #222;
+}
+
+.water-para,
+.middle-para {
+  color: #d9d9d9;
+  margin-bottom: 15px;
+  line-height: 1.7;
+}
+
+.right-about-us p {
+  color: #d9d9d9;
+  margin-bottom: 15px;
+  line-height: 1.7;
+}
+
+.read-btn {
+  margin-top: 15px;
+  background: none;
+  border: 1px solid #caa646;
+  padding: 10px 26px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.read-btn:hover {
+  background-color: #caa646;
+}
+
+.read-link {
+  color: #caa646;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+
+.read-btn:hover .read-link {
+  color: #0d0d0d;
+}
+
+/* Responsive: stack image and text on smaller screens */
+@media (max-width: 768px) {
+  .about-content-wrapper,
+  .about-content-wrapper.reverse {
+    flex-direction: column;
+  }
+
+  .about-image {
+    height: 260px;
+  }
+}
+}
+#contact{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    color: goldenrod;
+    padding: 30px 60px;
+}
+.contact-heading{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;  
+    display: flex;
+    justify-content: center; 
+}
+.contact-info{
+    display: flex;
+    justify-content:center;
+    margin-top: 20px;
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+    width: 50%;
+    margin-left: 25%;
+    border-radius: 10px;
+}
+.send-button{
+  background-color: black;
+    color: goldenrod;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition-duration: ease;
+    height: 10vh;
+}
+
+@keyframes pulseAnimation {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.15); }
+}
+
+.element {
+  animation-name: pulseAnimation;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: both;
+}
+/* ============================
+   ABOUT PAGE — RESPONSIVE
+   ============================ */
+
+/* ----- Tablets (≤1024px) ----- */
+@media (max-width: 1024px) {
+  .about-us {
+    padding: 60px 30px;
+  }
+
+  .about-content-wrapper {
+    gap: 30px;
+    max-width: 100%;
+  }
+
+  .about-image {
+    height: 300px;
+  }
+}
+
+/* ----- Small tablets / large phones (≤768px) ----- */
+@media (max-width: 768px) {
+  .about-us {
+    padding: 50px 20px;
+  }
+
+  .about-us h3 {
+    font-size: 1.6rem;
+    margin-bottom: 25px;
+  }
+
+  /* Stack image and text for ALL about sections, including reversed ones */
+  .about-content-wrapper,
+  .about-content-wrapper.reverse {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .about-image {
+    height: 260px;
+  }
+
+  .water-para,
+  .middle-para,
+  .right-about-us p {
+    font-size: 0.95rem;
+    padding: 0 10px;
+  }
+
+  .read-btn {
+    margin-top: 20px;
+  }
+}
+
+/* ----- Mobile phones (≤480px) ----- */
+@media (max-width: 480px) {
+  .about-us {
+    padding: 40px 15px;
+  }
+
+  .about-us h3 {
+    font-size: 1.3rem;
+  }
+
+  .about-image {
+    height: 200px;
+  }
+
+  .water-para,
+  .middle-para,
+  .right-about-us p {
+    font-size: 0.85rem;
+    line-height: 1.6;
+  }
+
+  .navbar-brand {
+    width: 100px;
+    height: auto;
+  }
+
+  nav ul {
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav-link {
+    font-size: 0.75rem;
+  }
+}
+  .hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 28px;
+  height: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 1001;
+}
