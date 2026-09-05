@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>O'Brien jewelz</title> <!-- Link CSS -->
+    <title>O'Brien Jewelz</title>
     <!-- Link CSS -->
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="./asset/favicon_io/android-chrome-192x192.png" sizes="96x96" />
@@ -12,177 +12,144 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="manifest" href="/site.webmanifest">
-
-
 </head>
 
 <body>
-    <style>
-        ul {
-            display:flex;
-            gap:60px;
-        }
-    </style>
     <!-- Navigation -->
-   <nav>
-     <img class="navbar-brand" src="/obrien_jewelz_logo.svg" width="150" height="100" alt="O'Brien Jewelz logo">
-      <Ul>
-           
-           <li id="nav-blissis"><a class="nav-link" href="index.html">Home</a></li>
-           <li id="nav-blissis"><a class="nav-link" href="products.html">Products</a></li>
-           <li id="nav-blissis"><a class="nav-link" href="aboutus.html">About</a></li>
-           <li id="nav-blissis"><a class="nav-link" href="contact.html">Contact</a></li>
+    <nav>
+        <img class="navbar-brand" src="/obrien_jewelz_logo.svg" width="150" height="100" alt="O'Brien Jewelz logo">
 
-      </Ul>
-      <button class="cart-btn">
-        <a href="#cart">
-            cart
-        </a>
-      </button>
-   </nav>
-   
+        <ul id="nav-list">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+            <li class="nav-item"><a class="nav-link" href="aboutus.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+
+        <button class="cart-btn">
+            <a href="#cart">cart</a>
+        </button>
+
+        <button class="menu-icon" id="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-list">
+            <img src="./asset/menuicon.png" width="28" height="28" alt="">
+        </button>
+    </nav>
+
     <main>
- <section id="hero" class="hero">
-     <div class="hero-content">
+        <section id="hero" class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title" data-aos="fade-right">O'Brien Jewelz</h1>
+                <p class="hero-subtitle">Timeless Elegance, Crafted for You. Discover jewelry that tells your story. Handcrafted pieces for life's brightest moments.</p>
+                <div class="shop-btn-wrap">
+                    <button class="shop-btn">Shop</button>
+                </div>
+            </div>
+        </section>
 
-         <h1 class="hero-title" data-aos="fade-right">O'Brien Jewelz</h1>
-       
-         <p class="hero-subtitle">Timeless Elegance, Crafted for You. Discover jewelry that tells your story. Handcrafted pieces for life's brightest moments.</p>
-          <div class= shop-btn>
-             <button class="shop-btn">Shop</button>
-          </div>
-     </div>
-   </main>
-<div class="section-collect">
- </section">
- 
+        <section class="section-collect">
             <h1 class="collect">Our Collection</h1>
 
-    <!-- Products -->
+            <!-- Products -->
+            <section class="products">
+                <div class="first-wrapper">
+                    <div class="ring">
+                        <div class="ring-img">
+                            <img class="ring" src="/sateur paris.webp" alt="Sateur Paris engagement ring">
+                        </div>
+                        <h3 class="eng-ment">Engagement Ring</h3>
+                        <p class="comment">Sateur Paris engagement ring, our latest but limited edition.</p>
+                        <h4 class="price">$900</h4>
+                        <button>Add to Cart</button>
+                    </div>
 
-    <section class="products">
-        <div class="first-wrapper">
-           <div class="sateur-paris">
-                 <div class="ring-img">
-                    <img class="ring" src="/sateur paris.webp" alt="Product 1" >
-                 </div>
-                    <h3 class= "eng-ment">Engagement Ring</h3>
+                    <div class="neck-lace">
+                        <div class="lux-neck">
+                            <img class="necklace-img" src="/necklace.webp" alt="Delicate chain necklace">
+                            <h3 class="neck-comment">Necklace</h3>
+                            <p class="comment">Delicate chain, radiant finish, this necklace adds a subtle sparkle to any outfit.</p>
+                            <h4 class="price">$850</h4>
+                            <button>Add to Cart</button>
+                        </div>
+                    </div>
 
-                    <p class= "comment">sateur paris engagement ring, our lastest but limited edition.</p>
-              
-                    <h4 class= "price">$900</h4>
-                
-                    <button>Add to Cart</button>
-                
- 
-             </div>   
-     
- 
-        <div class="product-card">
-                <div class="lux-neck">
-
-              <img class= "necklace-img" src="/necklace.webp" alt="Product 1">
-
-                  
-              <h3 class="neck-comment">Necklace</h3>
-                  <p class= "comment">Delicate chain, radiant finish, this necklace adds a subtle sparkle to any outfit.</p>
-
-                     <h4 class= "price">$850</h4>
-
-                     <button>Add to Cart</button>
-
+                    <div class="earring">
+                        <div class="img-luxear">
+                            <img class="earring-img" src="/lux earring.jpg" alt="Luxury earrings">
+                            <h3 class="earing">Earrings</h3>
+                            <p class="comment">Designed to move with you, these earrings bring a soft sparkle to any look, day or night.</p>
+                            <h4 class="price">$650</h4>
+                            <button>Add to Cart</button>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        <div class=" "product">
-            <div class= "img-luxear">
-                     <img class= "earring-img" src="/lux earring.jpg" alt="Product 1" >
-                     <h3 class= "earing">Earrings</h3>
+            </section>
+        </section>
 
-                     <p class="comment">Designed to move with you, these earrings bring a soft sparkle to any look, day or night.</p>
-
-                     <h4 class= "price">$650</h4>
-
-                     <button>Add to Cart</button>
-
-            </div>
-
-         </div>   
- </div>
-    </section> <!-- about section -->
- 
-    <section class="about-us">
-        <h3>About <span class="us-class">Us</span></h3>
+        <!-- About section -->
+        <section class="about-us">
+            <h3>About <span class="us-class">Us</span></h3>
             <div class="about-content-wrapper">
- 
-           
-                            <div class="left-about-us"><div>
-                    <img class="about-image" src="about us img.jpeg" alt="students in class"/>
+                <div class="left-about-us">
+                    <img class="about-image" src="about us img.jpeg" alt="students in class">
                 </div>
- 
- 
-                             </div>
- 
-                          <div class="right-about-us">
-               
-                   <p class="water-para">
- 
-                    Founded in the year 2000, we're a jewellery brand for people who love beauty in the details. 
-                   </p>
-                    <p class="middle-para">
-                   We blend classic techniques with modern design to create pieces that are delicate, durable, and made to be worn and loved. 
+
+                <div class="right-about-us">
+                    <p class="water-para">
+                        Founded in the year 2000, we're a jewellery brand for people who love beauty in the details.
                     </p>
-                     <p>
-                    Quality matters to us, so we focus on fine materials, careful finishing, and designs you'll reach for again and again.
-                   </p>
-                   <button class="read-btn">
-                      <a class="read-link" href="./aboutus.html">Read more</a>
-                   </button>
- 
-                           </div>
- 
-             </div>
- 
-         </section>
- 
- 
+                    <p class="middle-para">
+                        We blend classic techniques with modern design to create pieces that are delicate, durable, and made to be worn and loved.
+                    </p>
+                    <p>
+                        Quality matters to us, so we focus on fine materials, careful finishing, and designs you'll reach for again and again.
+                    </p>
+                    <button class="read-btn">
+                        <a class="read-link" href="./aboutus.html">Read more</a>
+                    </button>
+                </div>
+            </div>
+        </section>
 
-
-
-   
-            <textarea placeholder="Your Message"></textarea>
-
-            <!-- Contact -->
-
-    <section id="contact" class="contact">
-
-        <h2 class="contact-heading">Contact Us</h2>
-<div class="contact-info">
-        <p>Email:info@obrienjewelz.com</p>
-      
-        <p class=" loc">Location:O'Brien Jewelz — Ring Road, Ibadan, Oyo State, Nigeria</p>
-    </div>
-        <form class="contact-form">
-
-            <input type="text" placeholder="Your Name" required>
-
-            <input type="email" placeholder="Your Email" required>
- <button class="send-button" type="submit">Send Message</button>
-
-        </form>
-
-    </section>
+        <!-- Contact -->
+        <section id="contact" class="contact">
+            <h2 class="contact-heading">Contact Us</h2>
+            <div class="contact-info">
+                <p class="email">Email: info@obrienjewelz.com</p>
+                <p class="loc">Location: O'Brien Jewelz — Ring Road, Ibadan, Oyo State, Nigeria</p>
+            </div>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message"></textarea>
+                <button class="send-button" type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
 
     <!-- Footer -->
-
     <footer class="footer">
-
         <p>&copy; 2026 O'Brien Jewelz. All Rights Reserved.</p>
-        
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+
+        const menuToggle = document.getElementById('menu-toggle');
+        const navList = document.getElementById('nav-list');
+
+        menuToggle.addEventListener('click', () => {
+            const isOpen = navList.classList.toggle('nav-open');
+            menuToggle.setAttribute('aria-expanded', isOpen);
+        });
+
+        // Close the mobile menu after a link is tapped
+        navList.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                navList.classList.remove('nav-open');
+                menuToggle.setAttribute('aria-expanded', 'false');
+            });
+        });
+    </script>
 </body>
 </html>
-<style>
-   

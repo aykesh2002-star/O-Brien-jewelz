@@ -11,6 +11,7 @@ body{
      font-family: "Outfit", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
+  overflow-x: hidden;
 }
 nav{
     display: flex;
@@ -60,7 +61,7 @@ button{
 }
 button:hover{
     background-color: goldenrod;
-    color: black;.about-content-wrapper {
+    color: black;.about-content-wrapper 
     display: flex;
     align-items: center;
     gap: 40px;
@@ -147,58 +148,22 @@ button:hover{
   color: #0d0d0d;
 }
 
-/* Responsive: stack image and text on smaller screens */
 @media (max-width: 768px) {
-  .about-content-wrapper,
-  .about-content-wrapper.reverse {
-    flex-direction: column;
-  }
 
-  .about-image {
-    height: 260px;
+  nav{
+    display: none;
   }
+#nav-blissis{
+display: none;
 }
+.menu-icon{
+display: block; 
+width: 24px;
+height: 24px;   
 }
-#contact{
-    width: 100%;
-    height: 100vh;
-    background-color: black;
-    color: goldenrod;
-    padding: 30px 60px;
-}
-.contact-heading{
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 20px;  
-    display: flex;
-    justify-content: center; 
-}
-.contact-info{
-    display: flex;
-    justify-content:center;
-    margin-top: 20px;
-}
-.contact-form{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 20px;
-    width: 50%;
-    margin-left: 25%;
-    border-radius: 10px;
-}
-.send-button{
-  background-color: black;
-    color: goldenrod;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 4px;
-    transition-duration: ease;
-    height: 10vh;
-}
-
+.cart-btn{
+    display: none;
+  }
 @keyframes pulseAnimation {
   0%, 100% { transform: scale(1); }
   50% { transform: scale(1.15); }
@@ -211,107 +176,4 @@ button:hover{
   animation-iteration-count: infinite;
   animation-direction: normal;
   animation-fill-mode: both;
-}
-/* ============================
-   ABOUT PAGE — RESPONSIVE
-   ============================ */
-
-/* ----- Tablets (≤1024px) ----- */
-@media (max-width: 1024px) {
-  .about-us {
-    padding: 60px 30px;
-  }
-
-  .about-content-wrapper {
-    gap: 30px;
-    max-width: 100%;
-  }
-
-  .about-image {
-    height: 300px;
-  }
-}
-
-/* ----- Small tablets / large phones (≤768px) ----- */
-@media (max-width: 768px) {
-  .about-us {
-    padding: 50px 20px;
-  }
-
-  .about-us h3 {
-    font-size: 1.6rem;
-    margin-bottom: 25px;
-  }
-
-  /* Stack image and text for ALL about sections, including reversed ones */
-  .about-content-wrapper,
-  .about-content-wrapper.reverse {
-    flex-direction: column;
-    text-align: center;
-    gap: 20px;
-  }
-
-  .about-image {
-    height: 260px;
-  }
-
-  .water-para,
-  .middle-para,
-  .right-about-us p {
-    font-size: 0.95rem;
-    padding: 0 10px;
-  }
-
-  .read-btn {
-    margin-top: 20px;
-  }
-}
-
-/* ----- Mobile phones (≤480px) ----- */
-@media (max-width: 480px) {
-  .about-us {
-    padding: 40px 15px;
-  }
-
-  .about-us h3 {
-    font-size: 1.3rem;
-  }
-
-  .about-image {
-    height: 200px;
-  }
-
-  .water-para,
-  .middle-para,
-  .right-about-us p {
-    font-size: 0.85rem;
-    line-height: 1.6;
-  }
-
-  .navbar-brand {
-    width: 100px;
-    height: auto;
-  }
-
-  nav ul {
-    gap: 15px;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .nav-link {
-    font-size: 0.75rem;
-  }
-}
-  .hamburger {
-  display: none;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 28px;
-  height: 20px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 0;
-  z-index: 1001;
 }
